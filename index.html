@@ -6,43 +6,33 @@
     <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Ping Pong</title>
+    <title>Address Book</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="well text-center">Ping Pong</h1>
-      <form id="pong_form" class="" action="index.html" method="post">
-        <div class="form-group">
-          <div class="row">
-            <div class="rules col-sm-3">
-              <h3 class="page-header">Rules</h3>
-              <p>
-                Ping Pong will count up to your number with the given exceptions:
-                <ul>
-                  <li>Numbers divisible by 3 become "ping"</li>
-                  <li>Numbers divisible by 5 become "pong"</li>
-                  <li>Numbers divisible by 15 become "ping-pong"</li>
-                </ul>
-              </p>
-              <p class="text-center">
-                Have fun!
-              </p>
+      <h1>Address book</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
             </div>
-            <div class="col-sm-3 col-sm-offset-1">
-              <h3 class="page-header">Let's Play!</h3>
-              <label for="">Please enter a number:</label>
-              <input id="num_input" required type="number" name="name" value="" class="format-control" autofocus="autofocus">
-              <br>
-              <button type="submit" class="btn btn-danger sm-space-above">Give Output!</button>
-                <ul id="pong_output" class="game-ul"></ul>
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
             </div>
-          </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+
+          </ul>
         </div>
-      </form>
-      <footer class="navbar navbar-fixed-bottom">
-        <p>Created by: Caleb Paul</p>
-        <p>Contact: @calebpaulmusic</p>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
